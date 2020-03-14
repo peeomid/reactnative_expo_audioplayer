@@ -59,7 +59,7 @@ class Player extends Component {
   }
 
   handleNextTrack = async () => {
-    console.log('next');
+    // console.log('next');
     let { playbackInstance, currentIndex } = this.state
     if (playbackInstance) {
       await playbackInstance.unloadAsync()
@@ -76,8 +76,8 @@ class Player extends Component {
 
     try {
       const playbackInstance = new Audio.Sound()
-      console.log('track');
-      console.log(this.props.tracks[currentIndex].audioUrl);
+      // console.log('track');
+      // console.log(this.props.tracks[currentIndex].audioUrl);
       const source = {
         uri: this.props.tracks[currentIndex].audioUrl
       }
@@ -96,8 +96,8 @@ class Player extends Component {
   }
 
   onPlaybackStatusUpdate = status => {
-    console.log('status updated');
-    console.log(status);
+    // console.log('status updated');
+    // console.log(status);
     if (status.isLoaded == true) {
       this.setState({ 
         totalLength: status.durationMillis,
@@ -140,7 +140,7 @@ class Player extends Component {
   }
 
   async sliding() {
-    console.log('sliding');
+    // console.log('sliding');
     const { isPlaying, playbackInstance } = this.state;
     if (isPlaying) {
       await playbackInstance.pauseAsync();
