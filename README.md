@@ -11,7 +11,7 @@ This is developed from https://github.com/aakashns/reactmusic
 
 ## Todo
 
-[ ] Basic Music Player
-[ ] Forward and Backward
-[ ] Repeat
-[ ] Shuffle
+- [x] Basic Music Player
+- [ ] Forward and Backward
+- [ ] Repeat
+- [ ] Shuffle
