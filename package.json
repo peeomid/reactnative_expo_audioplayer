@@ -1,0 +1,16 @@
+{
+  "name": "expo-audioplayer",
+  "version": "1.0.0",
+  "description": "Simple audio player for managed expo",
+  "main": "MusicPlayer.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "expo",
+    "audio",
+    "player"
+  ],
+  "author": "Luan Nguyen",
+  "license": "ISC"
+}
