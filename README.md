@@ -5,12 +5,14 @@ This is a simple Audio Player for those who use Expo.
 It's pretty barebone right now. Just enough to be used
 This is developed from https://github.com/aakashns/reactmusic
 
-![Expo Audio Player](expo-audioplayer.PNG)
+![Expo Audio Player](expo-audioplayer.PNG | width=300)
 
 ## Usage
 
 ```
 import React, { Component } from 'react';
+import Player from 'expo-audioplayer';
+
 ...
 const TRACKS = [
   {
