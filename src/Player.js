@@ -178,7 +178,8 @@ class Player extends Component {
           onPressPause={this.handlePlayPause}
           onBack={this.handlePreviousTrack}
           onForward={this.handleNextTrack}
-          paused={!this.state.isPlaying} />
+          paused={!this.state.isPlaying}
+          displayBackForward={this.props.displayBackForward} />
         {/* {video} */}
       </View>
     );
@@ -186,7 +187,8 @@ class Player extends Component {
 }
 
 Player.defaultProps = {
-  displayArt: true
+  displayArt: true,
+  displayBackForward: true
 }
 
 const styles = {

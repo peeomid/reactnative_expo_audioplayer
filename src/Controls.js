@@ -20,6 +20,7 @@ const Controls = ({
   onPressShuffle,
   onPressRepeat,
   forwardDisabled,
+  displayBackForward,
 }) => (
     <View style={styles.container}>
       <TouchableOpacity activeOpacity={0.0} onPress={onPressShuffle}>
@@ -27,7 +28,7 @@ const Controls = ({
       </TouchableOpacity>
       <View style={{ width: 40 }} />
       <TouchableOpacity onPress={onBack}>
-        <Ionicons name='ios-skip-backward' size={30} color='#444' />
+        <Ionicons style={[displayBackForward ? [] : styles.hide]} name='ios-skip-backward' size={30} color='#444' />
       </TouchableOpacity>
       <View style={{ width: 20 }} />
       {!paused ?
@@ -45,7 +46,7 @@ const Controls = ({
       <View style={{ width: 20 }} />
       <TouchableOpacity onPress={onForward}
         disabled={forwardDisabled}>
-        <Ionicons name='ios-skip-forward' size={30} color='#444' />
+        <Ionicons style={[displayBackForward ? [] : styles.hide]} name='ios-skip-forward' size={30} color='#444' />
       </TouchableOpacity>
       <View style={{ width: 40 }} />
       <TouchableOpacity activeOpacity={0.0} onPress={onPressRepeat}>
